@@ -3,23 +3,17 @@
 /**
  * _isupper - Check main
  * @c: An input character
- * Description: function uses _putchar function to print
- * alphabet in lowercase 10 times
- * Return: 1 if is lowercase or 0 if is uppercase
+ * Description: function that checks for uppercase character
+ * Return: 1 if is uppercase or 0 if is lowercase
  */
-int _islower(int c)
+int _isupper(int c)
 {
-	char upper = 'A';
-	int isupper = 0;
-
-	for (; upper <= 'Z'; upper++)
+	if (c >= 'A' && c <= 'Z')
 	{
-		if (c == upper)
-		{
-			isupper = 1;
-			break;
-		}
+		return (1);
 	}
-
-	return (isupper);
+	else
+	{
+		return (0);
+	}
 }
